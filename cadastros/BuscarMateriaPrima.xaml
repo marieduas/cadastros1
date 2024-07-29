@@ -1,0 +1,29 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cadastros.BuscarMateriaPrima"
+             Title="buscar materia prima">
+
+    <VerticalStackLayout Spacing="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Entry Placeholder="Digite o nome" />
+            <Image Source="search.png" WidthRequest="20" HeightRequest="20" Grid.Column="1"/>
+            <Image Source="plus.png" WidthRequest="20" HeightRequest="20" Grid.Column="2"/>
+            <Image Source="minus.png" WidthRequest="20" HeightRequest="20" Grid.Column="3"/>
+        </Grid>
+        <Label Text="nome:" FontSize="Medium" />
+        <CheckBox Content="algodão" />
+        <CheckBox Content="aba" />
+        <CheckBox Content="botão" />
+        <CheckBox Content="plástico" />
+        <CheckBox Content="linha" />
+        <Button Text="←" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cadastros.BuscarFornecedor">
+
+    <ContentPage.Content>
+        <Grid Padding="20" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label Text="buscar fornecedor"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   Grid.Row="0" />
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Grid.Row="1">
+                <Label Text="nome:"
+                       VerticalOptions="Center" />
+                <Entry x:Name="NomeEntry"
+                       Placeholder="Nome"
+                       WidthRequest="200" />
+                <Button Text="🔍"
+                        Clicked="OnBuscarClicked" />
+                <Button Text="➕"
+                        Clicked="OnAdicionarClicked" />
+                <Button Text="➖"
+                        Clicked="OnRemoverClicked" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Spacing="5">
+                <Frame BackgroundColor="LightGreen" Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="• Luís" VerticalOptions="Center" />
+                        <Button Text="➖"
+                                Clicked="OnRemoverItemClicked"
+                                HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Roberto" VerticalOptions="Center" />
+                        <Button Text="➖"
+                                Clicked="OnRemoverItemClicked"
+                                HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Ana" VerticalOptions="Center" />
+                        <Button Text="➖"
+                                Clicked="OnRemoverItemClicked"
+                                HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Julia" VerticalOptions="Center" />
+                        <Button Text="➖"
+                                Clicked="OnRemoverItemClicked"
+                                HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <Button Text="⬅️"
+                    Clicked="OnVoltarClicked"
+                    HorizontalOptions="Center"
+                    Grid.Row="3" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

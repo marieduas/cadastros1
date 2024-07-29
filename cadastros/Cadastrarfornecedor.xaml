@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cadastros.CadastrarFornecedor">
+
+    <ContentPage.Content>
+        <Grid Padding="20" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="cadastro fornecedor"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2" />
+
+            <Label Text="Nome:"
+                   VerticalOptions="Center"
+                   Grid.Row="1"
+                   Grid.Column="0" />
+            <Entry x:Name="NomeEntry"
+                   Placeholder="Nome"
+                   Grid.Row="1"
+                   Grid.Column="1" />
+
+            <Label Text="CPF/CNPJ:"
+                   VerticalOptions="Center"
+                   Grid.Row="2"
+                   Grid.Column="0" />
+            <Entry x:Name="CpfCnpjEntry"
+                   Placeholder="CPF/CNPJ"
+                   Grid.Row="2"
+                   Grid.Column="1" />
+
+            <Label Text="Endereço:"
+                   VerticalOptions="Center"
+                   Grid.Row="3"
+                   Grid.Column="0" />
+            <Entry x:Name="EnderecoEntry"
+                   Placeholder="Endereço"
+                   Grid.Row="3"
+                   Grid.Column="1" />
+
+            <Label Text="Número:"
+                   VerticalOptions="Center"
+                   Grid.Row="4"
+                   Grid.Column="0" />
+            <Entry x:Name="NumeroEntry"
+                   Placeholder="Número"
+                   Grid.Row="4"
+                   Grid.Column="1" />
+
+            <Label Text="Cidade:"
+                   VerticalOptions="Center"
+                   Grid.Row="5"
+                   Grid.Column="0" />
+            <Entry x:Name="CidadeEntry"
+                   Placeholder="Cidade"
+                   Grid.Row="5"
+                   Grid.Column="1" />
+
+            <Label Text="Estado:"
+                   VerticalOptions="Center"
+                   Grid.Row="6"
+                   Grid.Column="0" />
+            <Entry x:Name="EstadoEntry"
+                   Placeholder="Estado"
+                   Grid.Row="6"
+                   Grid.Column="1" />
+
+            <Label Text="País:"
+                   VerticalOptions="Center"
+                   Grid.Row="7"
+                   Grid.Column="0" />
+            <Entry x:Name="PaisEntry"
+                   Placeholder="País"
+                   Grid.Row="7"
+                   Grid.Column="1" />
+
+            <Label Text="CEP:"
+                   VerticalOptions="Center"
+                   Grid.Row="8"
+                   Grid.Column="0" />
+            <Entry x:Name="CepEntry"
+                   Placeholder="CEP"
+                   Grid.Row="8"
+                   Grid.Column="1" />
+
+            <Label Text="Telefone:"
+                   VerticalOptions="Center"
+                   Grid.Row="9"
+                   Grid.Column="0" />
+            <Entry x:Name="TelefoneEntry"
+                   Placeholder="Telefone"
+                   Grid.Row="9"
+                   Grid.Column="1" />
+
+            <Label Text="Email:"
+                   VerticalOptions="Center"
+                   Grid.Row="10"
+                   Grid.Column="0" />
+            <Entry x:Name="EmailEntry"
+                   Placeholder="Email"
+                   Grid.Row="10"
+                   Grid.Column="1" />
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Grid.Row="11"
+                         Grid.ColumnSpan="2">
+                <Button Text="⬅️"
+                        Clicked="OnVoltarClicked" />
+                <Button Text="cadastrar"
+                        Clicked="OnCadastrarClicked" />
+                <Button Text="❌"
+                        Clicked="OnCancelarClicked" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

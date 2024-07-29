@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cadastros.AtualizaFornecedor"
+             Title="atualizar fornecedor">
+
+    <VerticalStackLayout Spacing="20">
+        <Label Text="nome:" FontSize="Medium" />
+        <Entry Placeholder="Digite o nome" />
+        <Image Source="pencil.png" WidthRequest="20" HeightRequest="20" />
+
+        <ListView ItemsSource="{Binding Names}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <HorizontalStackLayout Spacing="20">
+            <Button Text="←" />
+            <Button Text="X" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

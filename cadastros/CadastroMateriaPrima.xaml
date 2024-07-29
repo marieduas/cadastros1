@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cadastros.CadastroMateriaPrima"
+             Title="cadastro materia prima">
+
+    <VerticalStackLayout Spacing="20">
+        <Label Text="quantidade" />
+        <Entry Placeholder="Digite a quantidade" />
+        <Label Text="valor estimado" />
+        <Entry Placeholder="Digite o valor estimado" />
+        <Label Text="tempo estimado" />
+        <Entry Placeholder="Digite o tempo estimado" />
+        <Label Text="Cidade:" />
+        <Entry Placeholder="Digite a cidade" />
+
+        <HorizontalStackLayout Spacing="20">
+            <Button Text="←" />
+            <Button Text="cadastrar" />
+            <Button Text="X" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
