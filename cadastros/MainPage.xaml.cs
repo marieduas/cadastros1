@@ -1,10 +1,10 @@
 ﻿namespace cadastros;
 
-public partial class MainPage : ContentPage
+public partial class cadastros : ContentPage
 {
 
 
-	public MainPage()
+	public cadastros()
 	{
 		InitializeComponent();
 	}

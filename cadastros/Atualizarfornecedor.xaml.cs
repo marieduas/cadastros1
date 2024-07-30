@@ -2,11 +2,11 @@ using System.Collections.ObjectModel;
 
 namespace cadastros
 {
-    public partial class AtualizaFornecedor : ContentPage
+    public partial class Atualizarfornecedor : ContentPage
     {
         public ObservableCollection<string> Names { get; set; }
 
-        public AtualizaFornecedor()
+        public Atualizarfornecedor()
         {
             InitializeComponent();
 

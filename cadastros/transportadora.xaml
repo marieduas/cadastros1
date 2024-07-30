@@ -1,0 +1,12 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:x="http://schemas.nicrosoft.com/winfx/2009/xaml"
+             x:Class="cadastros.transportadora">
+
+    <StackLayout Spacing="20">
+        <Label Text="Cadastro de tranportadora"
+               FontSize="Title"
+               HorizontalTextAlignment="Center"
+
+        <Entry Placeholder="Nome"/>
+        <Entry Placeholder="Telefone"
+        
