@@ -9,8 +9,8 @@ public string GetCPF ()
     {
         return CPF;
     }
-public void SetCPF (string cnpj)
+public void SetCNPJ (string cnpj)
     {
-        CPF=cnpj;
+        CNPJ=cnpj;
     }
 }
