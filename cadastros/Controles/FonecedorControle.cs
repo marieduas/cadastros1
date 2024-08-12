@@ -1,24 +1,48 @@
+
 using Modelos;
 
-namespace Controles
+namespace Controles;
+
+public class FornecedorControle : BaseControle
 {
-    public class  FornecedorControle: ControleBase
-    {
-        public virtual void Criar (Registro O)
-        {
-        }
+  //----------------------------------------------------------------------------
 
-        public virtual void Atualizar (Registro O)
-        {
-        }
+  public FornecedorControle() : base()
+  {
+    NomeDaTabela = "Clientes";
+  }
 
-         public virtual void Apagar (int id)
-        {
-        }
+  //----------------------------------------------------------------------------
 
-         public virtual Registro Ler (int id)
-        {
-            return null;
-        }
-    }
+  public virtual Registro? Ler(int idCliente)
+  {
+    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    return collection.FindOne(d => d.Id == idCliente);
+  }
+
+  //----------------------------------------------------------------------------
+
+  public virtual List<Cliente>? LerTodos()
+  {
+    var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.Nome));
+  }
+
+  //----------------------------------------------------------------------------
+
+  public virtual void Apagar(int idFornecedor)
+  {
+    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    collection.Delete(idFornecedor);
+  }
+
+  //----------------------------------------------------------------------------
+
+  public virtual void CriarOuAtualizar(Cliente Fornecedor)
+  {
+    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    collection.Upsert(Fornecedor);
+  }
+
+  //----------------------------------------------------------------------------
 }

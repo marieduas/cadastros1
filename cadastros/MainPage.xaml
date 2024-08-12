@@ -7,8 +7,7 @@
                  HorizontalOptions="Center" 
                  BackgroundColor="LightBlue"
                  Padding="20,40" 
-                 CornerRadius="10" 
-                 Spacing="10"/>
+                 Spacing="10">
 
         <Label  Text="O que esta procurando" 
                 FontSize="20" 
