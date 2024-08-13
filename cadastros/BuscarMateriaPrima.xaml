@@ -19,11 +19,6 @@
             <Image Source="minus.png" WidthRequest="20" HeightRequest="20" Grid.Column="3"/>
         </Grid>
         <Label Text="nome:" FontSize="Medium" />
-        <CheckBox Content="algodão" />
-        <CheckBox Content="aba" />
-        <CheckBox Content="botão" />
-        <CheckBox Content="plástico" />
-        <CheckBox Content="linha" />
         <Button Text="←" />
     </VerticalStackLayout>
 </ContentPage>

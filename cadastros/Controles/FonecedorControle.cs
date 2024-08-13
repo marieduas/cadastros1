@@ -9,30 +9,30 @@ public class FornecedorControle : BaseControle
 
   public FornecedorControle() : base()
   {
-    NomeDaTabela = "Clientes";
+    NomeDaTabela = "Fornecedor";
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idCliente)
+  public virtual Registro? Ler(int idFornecedor)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idCliente);
+    return collection.FindOne(d => d.Id == idFornecedor);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual List<Cliente>? LerTodos()
+  public virtual List<Fornecedor>? LerTodos()
   {
-    var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.Nome));
+    var tabela = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
+    return new List<Fornecedor>(tabela.FindAll().OrderBy(d => d.Nome));
   }
 
   //----------------------------------------------------------------------------
 
   public virtual void Apagar(int idFornecedor)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
     collection.Delete(idFornecedor);
   }
 

@@ -3,7 +3,7 @@ using Modelos;
 
 namespace Controles;
 
-public class TransportadorControle : BaseControle
+public class TransportadoraControle : BaseControle
 {
   //----------------------------------------------------------------------------
 
@@ -38,10 +38,10 @@ public class TransportadorControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Transporatdora Transporatdora)
+  public virtual void CriarOuAtualizar(Transportadora Transportadora)
   {
     var collection = liteDB.GetCollection<Transportadora>(NomeDaTabela);
-    collection.Upsert(Transporatdora);
+    collection.Upsert(Transportadora);
   }
 
   //----------------------------------------------------------------------------

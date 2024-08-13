@@ -3,40 +3,76 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cadastros.MainPage">
 
-    <StackLayout VerticalOptions="Center" 
-                 HorizontalOptions="Center" 
-                 BackgroundColor="LightBlue"
-                 Padding="20,40" 
-                 Spacing="10">
+    <Grid Padding="20,40" 
+          BackgroundColor="#4ba6db">
 
-        <Label  Text="O que esta procurando" 
-                FontSize="20" 
-                HorizontalOptions="Center" 
-                TextColor="Black"/>
+        <!-- Define rows and columns for the grid -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- For Label -->
+            <RowDefinition Height="Auto"/> <!-- For Buttons -->
+            <RowDefinition Height="Auto"/> <!-- For Buttons -->
+            <RowDefinition Height="Auto"/> <!-- For Buttons -->
+            <RowDefinition Height="Auto"/> <!-- For Buttons -->
+            <RowDefinition Height="Auto"/> <!-- For Buttons -->
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/> <!-- Center column for buttons -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Label at the top of the grid -->
+        <Label Text="O que está procurando?" 
+               FontSize="20" 
+               HorizontalOptions="Center" 
+               TextColor="Black"
+               Grid.Row="0" 
+               Grid.Column="0" />
+               
+        <Label Text="" 
+               FontSize="120" 
+               HorizontalOptions="Center" 
+               TextColor="Black" />
+
+        <!-- Buttons in the grid -->
         <Button Text="Cliente" 
                 BackgroundColor="White" 
                 TextColor="Black" 
-                CornerRadius="5"/>
+                CornerRadius="5"
+                Grid.Row="1" 
+                Grid.Column="0" 
+                Margin="0,5" />
 
         <Button Text="Fornecedor" 
                 BackgroundColor="White" 
                 TextColor="Black"
-                CornerRadius="5"/>
+                CornerRadius="5"
+                Grid.Row="2" 
+                Grid.Column="0" 
+                Margin="0,5"/>
 
         <Button Text="Matéria-prima"
                 BackgroundColor="White"
                 TextColor="Black"
-                CornerRadius="5"/>
+                CornerRadius="5"
+                Grid.Row="3" 
+                Grid.Column="0" 
+                Margin="0,5"/>
 
         <Button Text="Transportadora"
                 BackgroundColor="White"
                 TextColor="Black"
-                CornerRadius="5"/>
+                CornerRadius="5"
+                Grid.Row="4" 
+                Grid.Column="0" 
+                Margin="0,5"/>
 
         <Button Text="Produto"
                 BackgroundColor="White"
                 TextColor="Black"
-                CornerRadius="5"/>
+                CornerRadius="5"
+                Grid.Row="5" 
+                Grid.Column="0" 
+                Margin="0,5"/>
 
-    </StackLayout>
+    </Grid>
 </ContentPage>
