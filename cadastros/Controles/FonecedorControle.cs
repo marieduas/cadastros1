@@ -16,7 +16,7 @@ public class FornecedorControle : BaseControle
 
   public virtual Registro? Ler(int idFornecedor)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
     return collection.FindOne(d => d.Id == idFornecedor);
   }
 
@@ -38,10 +38,10 @@ public class FornecedorControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Cliente Fornecedor)
+  public virtual void CriarOuAtualizar(Fornecedor fornecedor)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    collection.Upsert(Fornecedor);
+    var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
+    collection.Upsert(fornecedor);
   }
 
   //----------------------------------------------------------------------------

@@ -5,6 +5,12 @@
 
     <VerticalStackLayout Spacing="20">
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
@@ -12,13 +18,27 @@
                 <ColumnDefinition Width="Auto"/>
 
             </Grid.ColumnDefinitions>
+            <Label Text="Matéria-Prima"
+                   FontSize="Medium" 
+                   Grid.Row="0"
+                   Grid.Column="0"/>
 
-            <Entry Placeholder="Digite o nome" />
+            <Entry Placeholder="Procurar"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+
             <Image Source="search.png" WidthRequest="20" HeightRequest="20" Grid.Column="1"/>
             <Image Source="plus.png" WidthRequest="20" HeightRequest="20" Grid.Column="2"/>
             <Image Source="minus.png" WidthRequest="20" HeightRequest="20" Grid.Column="3"/>
+        
+       
+
+        <Button Text="Voltar"
+                Clicked="botaovoltar"
+                BackgroundColor=" #80bfff" 
+                TextColor="Black"
+                Grid.Row="2"
+                Grid.Column="0"/>
         </Grid>
-        <Label Text="nome:" FontSize="Medium" />
-        <Button Text="←" />
     </VerticalStackLayout>
 </ContentPage>

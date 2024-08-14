@@ -1,4 +1,5 @@
 ﻿using Microsoft.Maui.Controls;
+using Modelos;
 
 namespace cadastros;
 
@@ -11,11 +12,24 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	     // Optionally, you can add event handlers for button clicks here
-        // For example:
-        // private void OnClienteButtonClicked(object sender, EventArgs e)
-        // {
-        //     // Handle the button click event
-        // }
-	
+        public void botaocliente(object sender, EventArgs args)
+        {
+                Application.Current.MainPage = new BuscarCliente();
+        }
+	 public void botaofornecedor(object sender, EventArgs args)
+        {
+                Application.Current.MainPage = new BuscarFornecedor();
+        }
+        public void botaomateria(object sender, EventArgs args)
+        {
+                Application.Current.MainPage = new BuscarMateriaPrima();
+        }
+         public void botaotransportadora(object sender, EventArgs args)
+        {
+               // Application.Current.MainPage = new Transportadora();
+        }
+         public void botaoproduto(object sender, EventArgs args)
+        {
+                Application.Current.MainPage = new BuscarProduto();
+        }
 }

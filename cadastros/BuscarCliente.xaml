@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cadastros.BuscarCliente">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" 
+                             Spacing="10">
+            
+            <HorizontalStackLayout>
+                <Image Source="search_icon.png"
+                       WidthRequest="30"
+                       HeightRequest="30"/>
+                       
+                <Entry Placeholder="Carlos Henrique"
+                       HorizontalOptions="FillAndExpand"/>
+               
+            </HorizontalStackLayout>
+            
+            <Button Text="Lista de Clientes" />
+            <Button Text="Larissa Gomes" />
+            <Button Text="Larissa Gomes" />
+            <Button Text="Larissa Gomes" />
+            <Button Text="Larissa Gomes" />
+            <Button Text="Larissa Gomes" />
+            <Button Text="Carlos" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

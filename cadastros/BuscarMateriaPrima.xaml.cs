@@ -6,5 +6,9 @@ namespace cadastros
         {
             InitializeComponent();
         }
+         public void botaovoltar(object sender, EventArgs args)
+        {
+                Application.Current.MainPage = new MainPage();
+        }
     }
 }

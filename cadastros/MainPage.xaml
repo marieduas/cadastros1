@@ -40,7 +40,8 @@
                 CornerRadius="5"
                 Grid.Row="1" 
                 Grid.Column="0" 
-                Margin="0,5" />
+                Margin="0,5"
+                Clicked="botaocliente" />
 
         <Button Text="Fornecedor" 
                 BackgroundColor="White" 
@@ -48,7 +49,8 @@
                 CornerRadius="5"
                 Grid.Row="2" 
                 Grid.Column="0" 
-                Margin="0,5"/>
+                Margin="0,5"
+                Clicked="botaofornecedor"/>
 
         <Button Text="Matéria-prima"
                 BackgroundColor="White"
@@ -56,7 +58,8 @@
                 CornerRadius="5"
                 Grid.Row="3" 
                 Grid.Column="0" 
-                Margin="0,5"/>
+                Margin="0,5"
+                Clicked="botaomateria"/>
 
         <Button Text="Transportadora"
                 BackgroundColor="White"
@@ -64,7 +67,8 @@
                 CornerRadius="5"
                 Grid.Row="4" 
                 Grid.Column="0" 
-                Margin="0,5"/>
+                Margin="0,5"
+                Clicked="botaotransportadora"/>
 
         <Button Text="Produto"
                 BackgroundColor="White"
@@ -72,7 +76,8 @@
                 CornerRadius="5"
                 Grid.Row="5" 
                 Grid.Column="0" 
-                Margin="0,5"/>
+                Margin="0,5"
+                Clicked="botaoproduto"/>
 
     </Grid>
 </ContentPage>
