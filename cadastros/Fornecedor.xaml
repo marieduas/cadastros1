@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="cadastros.BuscarFornecedor">
+             x:Class="cadastros.Fornecedor">
 
     <ContentPage.Content>
         <Grid Padding="20" RowSpacing="10">
@@ -33,10 +33,43 @@
                         Clicked="OnRemoverClicked" />
             </StackLayout>
 
-            <StackLayout Grid.Row="2" Spacing="5">
-                <Frame BackgroundColor="LightGreen" Padding="10">
+            <StackLayout Grid.Row="2"
+                         Spacing="5">
+
+
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="• Luís" VerticalOptions="Center" />
+
+                        <Label Text="Nome"
+                               VerticalOptions="Center" />
+
+                        <Entry Placeholder="Digite o nome"
+                               x:Name="ValorEntry"
+                                Grid.Row="7"
+                   Grid.Column="0"/>
+
+                        <Button Text="➖"
+                                Clicked="OnRemoverItemClicked"
+                                HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+        
+                <Frame Padding="10">
+
+                    <StackLayout Orientation="Horizontal">
+
+                        <Label Text="Roberto"
+                               VerticalOptions="Center" />
+
+                        <Button Text="➖"
+                                Clicked="OnRemoverItemClicked"
+                                HorizontalOptions="EndAndExpand" />
+
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Ana"
+                               VerticalOptions="Center" />
+
                         <Button Text="➖"
                                 Clicked="OnRemoverItemClicked"
                                 HorizontalOptions="EndAndExpand" />
@@ -44,23 +77,9 @@
                 </Frame>
                 <Frame Padding="10">
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Roberto" VerticalOptions="Center" />
-                        <Button Text="➖"
-                                Clicked="OnRemoverItemClicked"
-                                HorizontalOptions="EndAndExpand" />
-                    </StackLayout>
-                </Frame>
-                <Frame Padding="10">
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="Ana" VerticalOptions="Center" />
-                        <Button Text="➖"
-                                Clicked="OnRemoverItemClicked"
-                                HorizontalOptions="EndAndExpand" />
-                    </StackLayout>
-                </Frame>
-                <Frame Padding="10">
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="Julia" VerticalOptions="Center" />
+                        <Label Text="Julia"
+                               VerticalOptions="Center" />
+
                         <Button Text="➖"
                                 Clicked="OnRemoverItemClicked"
                                 HorizontalOptions="EndAndExpand" />

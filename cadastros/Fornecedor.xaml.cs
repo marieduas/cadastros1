@@ -2,9 +2,9 @@ using Microsoft.Maui.Controls;
 
 namespace cadastros
 {
-    public partial class BuscarFornecedor: ContentPage
+    public partial class Fornecedor: ContentPage
     {
-        public BuscarFornecedor()
+        public Fornecedor()
         {
             InitializeComponent();
         }

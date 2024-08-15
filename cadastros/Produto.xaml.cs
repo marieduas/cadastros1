@@ -3,11 +3,11 @@ using System.Collections.ObjectModel;
 
 namespace cadastros
 {
-    public partial class BuscarProduto : ContentPage
+    public partial class Produto : ContentPage
     {
         public ObservableCollection<Product> Products { get; set; }
 
-        public BuscarProduto()
+        public Produto()
         {
             InitializeComponent();
             

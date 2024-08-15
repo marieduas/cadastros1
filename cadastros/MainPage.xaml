@@ -6,21 +6,21 @@
     <Grid Padding="20,40" 
           BackgroundColor="#4ba6db">
 
-        <!-- Define rows and columns for the grid -->
+        
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/> <!-- For Label -->
-            <RowDefinition Height="Auto"/> <!-- For Buttons -->
-            <RowDefinition Height="Auto"/> <!-- For Buttons -->
-            <RowDefinition Height="Auto"/> <!-- For Buttons -->
-            <RowDefinition Height="Auto"/> <!-- For Buttons -->
-            <RowDefinition Height="Auto"/> <!-- For Buttons -->
+            <RowDefinition Height="Auto"/> 
+            <RowDefinition Height="Auto"/> 
+            <RowDefinition Height="Auto"/> 
+            <RowDefinition Height="Auto"/> 
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/> 
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/> <!-- Center column for buttons -->
+            <ColumnDefinition Width="*"/> 
         </Grid.ColumnDefinitions>
 
-        <!-- Label at the top of the grid -->
+        
         <Label Text="O que está procurando?" 
                FontSize="20" 
                HorizontalOptions="Center" 
@@ -33,7 +33,7 @@
                HorizontalOptions="Center" 
                TextColor="Black" />
 
-        <!-- Buttons in the grid -->
+        
         <Button Text="Cliente" 
                 BackgroundColor="White" 
                 TextColor="Black" 

@@ -1,8 +1,8 @@
 namespace cadastros
 {
-    public partial class BuscarCliente : ContentPage
+    public partial class Cliente : ContentPage
     {
-        public BuscarCliente()
+        public Cliente()
         {
             InitializeComponent();
           

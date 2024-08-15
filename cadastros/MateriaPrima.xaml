@@ -1,0 +1,107 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cadastros.MateriaPrima"
+             Title="materia prima">
+
+    <VerticalStackLayout Spacing="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Matéria-Prima"
+                   FontSize="Medium" 
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+
+            <Image Source="search.png"
+                   WidthRequest="20"
+                   HeightRequest="20"
+                   Grid.Column="1"/>
+
+            <Image Source="plus.png"
+                   WidthRequest="20"
+                   HeightRequest="20"
+                   Grid.Column="2"/>
+
+            <Image Source="minus.png"
+                   WidthRequest="20"
+                   HeightRequest="20"
+                   Grid.Column="3"/>
+        
+            <Label Text="ID:"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+
+            <Label x:Name="IdLabel"
+                   Grid.Row="3"
+                   Grid.Column="0"/>
+
+            <Label Text="Unidade:"
+                   Grid.Row="4"
+                   Grid.Column="0" />
+
+            <Entry Placeholder="Digite a unidade"
+                   x:Name="NomeEntry" 
+                   Grid.Row="5"
+                   Grid.Column="0"/>
+
+            <Label Text="Valor estimado:"
+                   Grid.Row="6"
+                   Grid.Column="0" />
+
+            <Entry Placeholder="Digite o valor etimado"
+                   x:Name="ValorEntry"
+                   Grid.Row="7"
+                   Grid.Column="0"/>
+
+            <Label Text="Tempo estimado:" 
+                   Grid.Row="8"
+                   Grid.Column="0"/>
+
+            <Entry Placeholder="Digite o tempo estimado"
+                   x:Name="TempoEntry" 
+                   Grid.Row="9"
+                   Grid.Column="0"/>
+
+              <VerticalStackLayout Spacing="20"
+                                   HorizontalOptions="Center">
+                   
+              <HorizontalStackLayout Spacing="20"
+                                     HorizontalOptions="Center">
+
+              <Button Text="Voltar"
+                        TextColor="blue"
+                        BackgroundColor="Transparent"
+                        Grid.Row="10"
+                        Grid.Column="0"
+                        Clicked="botaovoltar"/>
+
+              <Button Text="Salvar"
+                        TextColor="blue"
+                        BackgroundColor="Transparent"
+                        Grid.Row="11"
+                        Grid.Column="0"
+                        Clicked="botaosalvar"/>
+
+              </HorizontalStackLayout>
+              </VerticalStackLayout>
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

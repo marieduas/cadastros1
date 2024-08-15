@@ -1,12 +1,16 @@
 namespace cadastros
 {
-    public partial class BuscarMateriaPrima: ContentPage
+    public partial class MateriaPrima: ContentPage
     {
-        public BuscarMateriaPrima()
+        public MateriaPrima()
         {
             InitializeComponent();
         }
          public void botaovoltar(object sender, EventArgs args)
+        {
+                Application.Current.MainPage = new MainPage();
+        }
+              public void botaosalvar(object sender, EventArgs args)
         {
                 Application.Current.MainPage = new MainPage();
         }
