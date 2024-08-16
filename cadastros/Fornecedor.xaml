@@ -12,7 +12,7 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Label Text="buscar fornecedor"
+            <Label Text="Buscar Fornecedor"
                    FontSize="Large"
                    HorizontalOptions="Center"
                    Grid.Row="0" />
@@ -20,48 +20,22 @@
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="Center"
                          Grid.Row="1">
-                <Label Text="nome:"
+                <Label Text="Pesquisar:"
                        VerticalOptions="Center" />
                 <Entry x:Name="NomeEntry"
-                       Placeholder="Nome"
+                       Placeholder="Digite o nome"
                        WidthRequest="200" />
-                <Button Text="🔍"
-                        Clicked="OnBuscarClicked" />
-                <Button Text="➕"
-                        Clicked="OnAdicionarClicked" />
-                <Button Text="➖"
-                        Clicked="OnRemoverClicked" />
+                
             </StackLayout>
 
             <StackLayout Grid.Row="2"
                          Spacing="5">
-
-
-                    <StackLayout Orientation="Horizontal">
-
-                        <Label Text="Nome"
-                               VerticalOptions="Center" />
-
-                        <Entry Placeholder="Digite o nome"
-                               x:Name="ValorEntry"
-                                Grid.Row="7"
-                   Grid.Column="0"/>
-
-                        <Button Text="➖"
-                                Clicked="OnRemoverItemClicked"
-                                HorizontalOptions="EndAndExpand" />
-                    </StackLayout>
-        
                 <Frame Padding="10">
 
                     <StackLayout Orientation="Horizontal">
 
-                        <Label Text="Roberto"
-                               VerticalOptions="Center" />
-
-                        <Button Text="➖"
-                                Clicked="OnRemoverItemClicked"
-                                HorizontalOptions="EndAndExpand" />
+                        <Button Text="Roberto"
+                               VerticalOptions="Center"/>
 
                     </StackLayout>
                 </Frame>
@@ -69,10 +43,6 @@
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Ana"
                                VerticalOptions="Center" />
-
-                        <Button Text="➖"
-                                Clicked="OnRemoverItemClicked"
-                                HorizontalOptions="EndAndExpand" />
                     </StackLayout>
                 </Frame>
                 <Frame Padding="10">
@@ -80,17 +50,11 @@
                         <Label Text="Julia"
                                VerticalOptions="Center" />
 
-                        <Button Text="➖"
-                                Clicked="OnRemoverItemClicked"
-                                HorizontalOptions="EndAndExpand" />
                     </StackLayout>
                 </Frame>
             </StackLayout>
 
-            <Button Text="⬅️"
-                    Clicked="OnVoltarClicked"
-                    HorizontalOptions="Center"
-                    Grid.Row="3" />
+          
         </Grid>
     </ContentPage.Content>
 </ContentPage>

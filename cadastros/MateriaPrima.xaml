@@ -20,64 +20,37 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+     
             <Label Text="Matéria-Prima"
                    FontSize="Medium" 
-                   Grid.Row="0"
-                   Grid.Column="0"/>
-
-            <Image Source="search.png"
-                   WidthRequest="20"
-                   HeightRequest="20"
-                   Grid.Column="1"/>
-
-            <Image Source="plus.png"
-                   WidthRequest="20"
-                   HeightRequest="20"
-                   Grid.Column="2"/>
-
-            <Image Source="minus.png"
-                   WidthRequest="20"
-                   HeightRequest="20"
-                   Grid.Column="3"/>
+                   Grid.Row="0"/>
         
             <Label Text="ID:"
-                   Grid.Row="2"
-                   Grid.Column="0"/>
+                   Grid.Row="2"/>
 
             <Label x:Name="IdLabel"
-                   Grid.Row="3"
-                   Grid.Column="0"/>
+                   Grid.Row="3"/>
 
             <Label Text="Unidade:"
-                   Grid.Row="4"
-                   Grid.Column="0" />
+                   Grid.Row="4"/>
 
             <Entry Placeholder="Digite a unidade"
                    x:Name="NomeEntry" 
-                   Grid.Row="5"
-                   Grid.Column="0"/>
+                   Grid.Row="5"/>
 
             <Label Text="Valor estimado:"
-                   Grid.Row="6"
-                   Grid.Column="0" />
+                   Grid.Row="6"/>
 
             <Entry Placeholder="Digite o valor etimado"
                    x:Name="ValorEntry"
-                   Grid.Row="7"
-                   Grid.Column="0"/>
+                   Grid.Row="7"/>
 
             <Label Text="Tempo estimado:" 
-                   Grid.Row="8"
-                   Grid.Column="0"/>
+                   Grid.Row="8"/>
 
             <Entry Placeholder="Digite o tempo estimado"
                    x:Name="TempoEntry" 
-                   Grid.Row="9"
-                   Grid.Column="0"/>
+                   Grid.Row="9"/>
 
               <VerticalStackLayout Spacing="20"
                                    HorizontalOptions="Center">
@@ -86,17 +59,15 @@
                                      HorizontalOptions="Center">
 
               <Button Text="Voltar"
-                        TextColor="blue"
-                        BackgroundColor="Transparent"
+                        TextColor="black"
+                        BackgroundColor="Blue"
                         Grid.Row="10"
-                        Grid.Column="0"
                         Clicked="botaovoltar"/>
 
               <Button Text="Salvar"
-                        TextColor="blue"
-                        BackgroundColor="Transparent"
+                        TextColor="black"
+                        BackgroundColor="Blue"
                         Grid.Row="11"
-                        Grid.Column="0"
                         Clicked="botaosalvar"/>
 
               </HorizontalStackLayout>

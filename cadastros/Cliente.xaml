@@ -8,9 +8,7 @@
                              Spacing="10">
             
             <HorizontalStackLayout>
-                <Image Source="search_icon.png"
-                       WidthRequest="30"
-                       HeightRequest="30"/>
+
                        
                 <Entry Placeholder="Carlos Henrique"
                        HorizontalOptions="FillAndExpand"/>
@@ -18,6 +16,7 @@
             </HorizontalStackLayout>
             
             <Button Text="Lista de Clientes" />
+
             <Button Text="Larissa Gomes" />
             <Button Text="Larissa Gomes" />
             <Button Text="Larissa Gomes" />
@@ -25,6 +24,17 @@
             <Button Text="Larissa Gomes" />
             <Button Text="Carlos" />
             
+              <Button Text="Voltar"
+                        TextColor="black"
+                        BackgroundColor="Blue"
+                        Grid.Row="10"
+                        Clicked="botaovoltar"/>
+
+              <Button Text="Salvar"
+                        TextColor="black"
+                        BackgroundColor="Blue"
+                        Grid.Row="11"
+                        Clicked="botaosalvar"/>
         </VerticalStackLayout>
     </ScrollView>
 

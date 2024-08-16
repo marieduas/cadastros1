@@ -14,18 +14,22 @@
             <RowDefinition Height="Auto"/> 
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/> 
+            <RowDefinition Height="Auto"/> 
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/> 
         </Grid.ColumnDefinitions>
 
+        <Image Source="boneinicial.png"
+               Aspect="AspectFill"
+               Grid.Row="0"/>
         
         <Label Text="O que está procurando?" 
                FontSize="20" 
                HorizontalOptions="Center" 
                TextColor="Black"
-               Grid.Row="0" 
+               Grid.Row="1" 
                Grid.Column="0" />
                
         <Label Text="" 
@@ -38,7 +42,7 @@
                 BackgroundColor="White" 
                 TextColor="Black" 
                 CornerRadius="5"
-                Grid.Row="1" 
+                Grid.Row="2" 
                 Grid.Column="0" 
                 Margin="0,5"
                 Clicked="botaocliente" />
@@ -47,7 +51,7 @@
                 BackgroundColor="White" 
                 TextColor="Black"
                 CornerRadius="5"
-                Grid.Row="2" 
+                Grid.Row="3" 
                 Grid.Column="0" 
                 Margin="0,5"
                 Clicked="botaofornecedor"/>
@@ -56,7 +60,7 @@
                 BackgroundColor="White"
                 TextColor="Black"
                 CornerRadius="5"
-                Grid.Row="3" 
+                Grid.Row="4" 
                 Grid.Column="0" 
                 Margin="0,5"
                 Clicked="botaomateria"/>
@@ -65,7 +69,7 @@
                 BackgroundColor="White"
                 TextColor="Black"
                 CornerRadius="5"
-                Grid.Row="4" 
+                Grid.Row="5" 
                 Grid.Column="0" 
                 Margin="0,5"
                 Clicked="botaotransportadora"/>
@@ -74,7 +78,7 @@
                 BackgroundColor="White"
                 TextColor="Black"
                 CornerRadius="5"
-                Grid.Row="5" 
+                Grid.Row="6" 
                 Grid.Column="0" 
                 Margin="0,5"
                 Clicked="botaoproduto"/>
