@@ -6,12 +6,13 @@
     <ScrollView>
         <StackLayout Padding="20" Spacing="10">
             <Label Text="Nome:" />
+
             <StackLayout Orientation="Horizontal">
+
                 <Entry x:Name="ProductSearchEntry"
                        Placeholder="Nome do produto" />
-                <Button Text="🔍" Clicked="OnSearchClicked"/>
-                <Button Text="➕" Clicked="OnAddClicked"/>
-                <Button Text="➖" Clicked="OnRemoveClicked"/>
+
+
             </StackLayout>
             <ListView x:Name="ProductListView">
                 <ListView.ItemTemplate>

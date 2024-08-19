@@ -35,19 +35,20 @@
                     <StackLayout Orientation="Horizontal">
 
                         <Button Text="Roberto"
-                               VerticalOptions="Center"/>
+                                VerticalOptions="Center"/>
 
                     </StackLayout>
                 </Frame>
                 <Frame Padding="10">
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Ana"
-                               VerticalOptions="Center" />
+
+                        <Button Text="Ana"
+                                VerticalOptions="Center" />
                     </StackLayout>
                 </Frame>
                 <Frame Padding="10">
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Julia"
+                        <Button Text="Julia"
                                VerticalOptions="Center" />
 
                     </StackLayout>

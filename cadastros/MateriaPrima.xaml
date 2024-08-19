@@ -19,6 +19,7 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
+            
 
      
             <Label Text="Matéria-Prima"
@@ -52,11 +53,7 @@
                    x:Name="TempoEntry" 
                    Grid.Row="9"/>
 
-              <VerticalStackLayout Spacing="20"
-                                   HorizontalOptions="Center">
-                   
-              <HorizontalStackLayout Spacing="20"
-                                     HorizontalOptions="Center">
+             
 
               <Button Text="Voltar"
                         TextColor="black"
@@ -70,8 +67,6 @@
                         Grid.Row="11"
                         Clicked="botaosalvar"/>
 
-              </HorizontalStackLayout>
-              </VerticalStackLayout>
 
         </Grid>
     </VerticalStackLayout>
