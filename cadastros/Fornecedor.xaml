@@ -54,7 +54,17 @@
                     </StackLayout>
                 </Frame>
             </StackLayout>
+                        <Button Text="Voltar"
+                        TextColor="black"
+                        BackgroundColor="Blue"
+                        Grid.Row="10"
+                        Clicked="botaovoltar"/>
 
+                        <Button Text="Salvar"
+                        TextColor="black"
+                        BackgroundColor="Blue"
+                        Grid.Row="11"
+                        Clicked="botaosalvar"/>
           
         </Grid>
     </ContentPage.Content>

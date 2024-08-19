@@ -26,7 +26,7 @@ public partial class MainPage : ContentPage
         }
          public void botaotransportadora(object sender, EventArgs args)
         {
-               // Application.Current.MainPage = new Transportadora();
+               Application.Current.MainPage = new transportadora();
         }
          public void botaoproduto(object sender, EventArgs args)
         {

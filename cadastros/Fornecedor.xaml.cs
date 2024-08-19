@@ -33,5 +33,13 @@ namespace cadastros
         {
             // Implementar lógica de voltar
         }
+           public void botaovoltar(object sender, EventArgs args)
+        {
+                Application.Current.MainPage = new MainPage();
+        }
+              public void botaosalvar(object sender, EventArgs args)
+        {
+                Application.Current.MainPage = new MainPage();
+        }
     }
 }
