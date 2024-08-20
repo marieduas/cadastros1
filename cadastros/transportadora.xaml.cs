@@ -18,5 +18,9 @@ namespace cadastros
         {
                 Application.Current.MainPage = new MainPage();
         }
+                public void botaocadastrar(object sender, EventArgs args)
+        {
+                Application.Current.transportadora = new Cadastrotransportadora();
+        }
     }
 }
