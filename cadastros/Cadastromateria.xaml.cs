@@ -2,9 +2,9 @@ using Microsoft.Maui.Controls;
 
 namespace cadastros
 {
-    public partial class Cadastrotransportadora : ContentPage
+    public partial class Cadastromateria : ContentPage
     {
-        public Cadastrotransportadora()
+        public Cadastromateria()
         {
             InitializeComponent();
         }

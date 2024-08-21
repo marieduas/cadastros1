@@ -1,78 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cadastros.MateriaPrima"
-             Title="materia prima">
+             BackgroundColor="White">
 
-    <VerticalStackLayout Spacing="20">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-          <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-          </Grid.ColumnDefinitions>
+        <Grid Padding="20,40" 
+              BackgroundColor="#4ba6db">
 
-     
-            <Label Text="Matéria-Prima"
-                   FontSize="Medium" 
-                   Grid.Row="0"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         
-            <Label Text="ID:"
-                   Grid.Row="2"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/> 
+            <ColumnDefinition Width="*"/> 
+        </Grid.ColumnDefinitions>
 
-            <Label x:Name="IdLabel"
-                   Grid.Row="3"/>
+  
+      
+            <Label Text="Nome das Materia-Prima"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Margin="0,10,0,10"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2"/>
 
-            <Label Text="Unidade:"
-                   Grid.Row="4"/>
+           
+            <Entry Placeholder="Digite aqui o que procura"
+                    WidthRequest="250"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="1"/>
 
-            <Entry Placeholder="Digite a unidade"
-                   x:Name="NomeEntry" 
-                   Grid.Row="5"/>
+            <Button Text="Linha"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="2"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"
+                    Clicked="botaocadastrar"/>
+                    
+            <Button Text="botão"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="3"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"/>
 
-            <Label Text="Valor estimado:"
-                   Grid.Row="6"/>
+            <Button Text="tinta"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="4"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"/>
 
-            <Entry Placeholder="Digite o valor etimado"
-                   x:Name="ValorEntry"
-                   Grid.Row="7"/>
+            <Button Text="algodão"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="5"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"/>
 
-            <Label Text="Tempo estimado:" 
-                   Grid.Row="8"/>
+            <Button Text="tecido"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="6"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"/>
 
-            <Entry Placeholder="Digite o tempo estimado"
-                   x:Name="TempoEntry" 
-                   Grid.Row="9"/>
+              <Button Text="plástico"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="6"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"/>
+                    
+            <Button Text="Voltar"
+                    TextColor="black"
+                    BackgroundColor="#30a0fc"
+                    Grid.Row="10"
+                    Grid.Column="0"
+                    Clicked="botaovoltar"/>
 
-             
-
-              <Button Text="Voltar"
-                        TextColor="black"
-                        BackgroundColor="Blue"
-                        Grid.Row="10"
-                        Grid.Column="0"
-                        Clicked="botaovoltar"/>
-
-              <Button Text="Salvar"
-                        TextColor="black"
-                        BackgroundColor="Blue"
-                        Grid.Row="10"
-                        Grid.Column="1"
-                        Clicked="botaosalvar"/>
-
-
+            <Button Text="Salvar"
+                    TextColor="black"
+                    BackgroundColor="#30a0fc"
+                    Grid.Row="10"
+                    Grid.Column="1"
+                    Clicked="botaosalvar"/>
         </Grid>
-    </VerticalStackLayout>
+       
+ 
+
 </ContentPage>
+        

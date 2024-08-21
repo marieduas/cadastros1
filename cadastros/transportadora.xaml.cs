@@ -20,7 +20,7 @@ namespace cadastros
         }
                 public void botaocadastrar(object sender, EventArgs args)
         {
-                Application.Current.transportadora = new Cadastrotransportadora();
+                Application.Current.MainPage = new Cadastrotransportadora();
         }
     }
 }

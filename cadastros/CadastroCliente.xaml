@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="cadastros.Cadastrotransportadora"
+             x:Class="cadastros.CadastroCliente"
              BackgroundColor="White"> 
 
     <Grid Padding="20,40"
@@ -30,7 +30,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-                    <Label Text="Transportadora"
+                    <Label Text="Clientes"
                            FontSize="Medium"
                            Grid.ColumnSpan="2"/>
 
@@ -50,11 +50,11 @@
                            Grid.Row="2"
                            Grid.Column="1"/>
 
-                    <Label Text="CPF/CNPJ:"
+                    <Label Text="CPF:"
                            Grid.Row="3"
                            Grid.Column="0"/>
 
-                    <Entry Placeholder="Digite o CPF/CNPJ"
+                    <Entry Placeholder="Digite o CPF"
                            Grid.Row="3"
                            Grid.Column="1"/>
 
@@ -66,74 +66,42 @@
                            Grid.Row="4"
                            Grid.Column="1"/>
 
-                    <Label Text="Cidade:"
-                           Grid.Row="5"
-                           Grid.Column="0"/>
-
-                    <Entry Placeholder="Digite a Cidade"
-                           Grid.Row="5"
-                           Grid.Column="1"/>
-
                     <Label Text="Estado:"
-                           Grid.Row="6"
+                           Grid.Row="5"
                            Grid.Column="0"/>
 
                     <Entry Placeholder="Digite o Estado"
-                           Grid.Row="6"
-                           Grid.Column="1"/>
-
-                    <Label Text="Pais:"
-                           Grid.Row="7"
-                           Grid.Column="0"/>
-
-                    <Entry Placeholder="Digite o Pais"
-                           Grid.Row="7"
-                           Grid.Column="1"/>
-
-                    <Label Text="CEP:"
-                           Grid.Row="8"
-                           Grid.Column="0"/>
-
-                    <Entry Placeholder="Digite o CEP"
-                           Grid.Row="8"
+                           Grid.Row="5"
                            Grid.Column="1"/>
 
                     <Label Text="Telefone:"
-                           Grid.Row="9"
+                           Grid.Row="6"
                            Grid.Column="0"/>
 
                     <Entry Placeholder="Digite o Telefone"
-                           Grid.Row="9"
+                           Grid.Row="6"
                            Grid.Column="1"/>
 
                     <Label Text="Email:"
-                           Grid.Row="10"
+                           Grid.Row="7"
                            Grid.Column="0"/>
 
                     <Entry Placeholder="Digite o Email"
-                           Grid.Row="10"
-                           Grid.Column="1"/>
-
-                    <Label Text="Percurso:"
-                           Grid.Row="11"
-                           Grid.Column="0"/>
-
-                    <Entry Placeholder="Digite o Percurso"
-                           Grid.Row="11"
+                           Grid.Row="7"
                            Grid.Column="1"/>
 
 
                     <Button Text="Voltar"
                             TextColor="black"
                             BackgroundColor="Blue"
-                            Grid.Row="13"
+                            Grid.Row="9"
                             Grid.Column="0"
                             Clicked="botaovoltar"/>
 
                     <Button Text="Salvar"
                             TextColor="black"
                             BackgroundColor="Blue"
-                            Grid.Row="13"
+                            Grid.Row="9"
                             Grid.Column="1"
                             Clicked="botaosalvar"/>
 

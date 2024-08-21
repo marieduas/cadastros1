@@ -1,71 +1,105 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="cadastros.Fornecedor">
+             x:Class="cadastros.Fornecedor"
+             BackgroundColor="White">
 
-    <ContentPage.Content>
-        <Grid Padding="20" RowSpacing="10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
+        <Grid Padding="20,40" 
+              BackgroundColor="#4ba6db">
 
-            <Label Text="Buscar Fornecedor"
-                   FontSize="Large"
-                   HorizontalOptions="Center"
-                   Grid.Row="0" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/> 
+            <ColumnDefinition Width="*"/> 
+        </Grid.ColumnDefinitions>
 
-            <StackLayout Orientation="Horizontal"
-                         HorizontalOptions="Center"
-                         Grid.Row="1">
-                <Label Text="Pesquisar:"
-                       VerticalOptions="Center" />
-                <Entry x:Name="NomeEntry"
-                       Placeholder="Digite o nome"
-                       WidthRequest="200" />
-                
-            </StackLayout>
+  
+      
+                <Label Text="Nome dos fornecedores"
+                       FontSize="20"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Margin="0,10,0,10"
+                       Grid.Row="0"
+                       Grid.ColumnSpan="2"/>
 
-            <StackLayout Grid.Row="2"
-                         Spacing="5">
-                <Frame Padding="10">
+           
+               <Entry Placeholder="Digite aqui o que procura"
+                      WidthRequest="250"
+                      Grid.ColumnSpan="2"
+                      Grid.Row="1"/>
 
-                    <StackLayout Orientation="Horizontal">
+            <Button Text="CapStyle Comércio"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="2"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"
+                    Clicked="botaocadastrar"/>
+                    
+            <Button Text="BonéMania"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="3"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"
+                    Clicked="botaocadastrar"/>
 
-                        <Button Text="Roberto"
-                                VerticalOptions="Center"/>
+            <Button Text="Topo Fashion"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="4"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"
+                    Clicked="botaocadastrar"/>
 
-                    </StackLayout>
-                </Frame>
-                <Frame Padding="10">
-                    <StackLayout Orientation="Horizontal">
+            <Button Text="Chapéu e Cia"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="5"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"
+                    Clicked="botaocadastrar"/>
 
-                        <Button Text="Ana"
-                                VerticalOptions="Center" />
-                    </StackLayout>
-                </Frame>
-                <Frame Padding="10">
-                    <StackLayout Orientation="Horizontal">
-                        <Button Text="Julia"
-                               VerticalOptions="Center" />
-
-                    </StackLayout>
-                </Frame>
-            </StackLayout>
-                        <Button Text="Voltar"
+            <Button Text="Boné e Charme"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="6"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"
+                    Clicked="botaocadastrar"/>
+                    
+              <Button Text="Voltar"
                         TextColor="black"
-                        BackgroundColor="Blue"
+                        BackgroundColor="#30a0fc"
                         Grid.Row="10"
+                        Grid.Column="0"
                         Clicked="botaovoltar"/>
 
-                        <Button Text="Salvar"
+              <Button Text="Salvar"
                         TextColor="black"
-                        BackgroundColor="Blue"
-                        Grid.Row="11"
+                        BackgroundColor="#30a0fc"
+                        Grid.Row="10"
+                        Grid.Column="1"
                         Clicked="botaosalvar"/>
-          
         </Grid>
-    </ContentPage.Content>
+       
+ 
+
 </ContentPage>
+        

@@ -1,41 +1,101 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="cadastros.Cliente">
+             x:Class="cadastros.Cliente"
+             BackgroundColor="White">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="10" 
-                             Spacing="10">
-            
-            <HorizontalStackLayout>
+        <Grid Padding="20,40" 
+              BackgroundColor="#4ba6db">
 
-                       
-                <Entry Placeholder="Carlos Henrique"
-                       HorizontalOptions="FillAndExpand"/>
-               
-            </HorizontalStackLayout>
-            
-            <Button Text="Lista de Clientes" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/> 
+            <ColumnDefinition Width="*"/> 
+        </Grid.ColumnDefinitions>
 
-            <Button Text="Larissa Gomes" />
-            <Button Text="Larissa Gomes" />
-            <Button Text="Larissa Gomes" />
-            <Button Text="Larissa Gomes" />
-            <Button Text="Larissa Gomes" />
-            <Button Text="Carlos" />
-            
-              <Button Text="Voltar"
-                        TextColor="black"
-                        BackgroundColor="Blue"
-                        Grid.Row="10"
-                        Clicked="botaovoltar"/>
+  
+      
+            <Label Text="Nome dos clientes"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Margin="0,10,0,10"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2"/>
 
-              <Button Text="Salvar"
-                        TextColor="black"
-                        BackgroundColor="Blue"
-                        Grid.Row="11"
-                        Clicked="botaosalvar"/>
-        </VerticalStackLayout>
-    </ScrollView>
+           
+            <Entry Placeholder="Digite aqui o que procura"
+                    WidthRequest="250"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="1"/>
+
+            <Button Text="Alex Oliveira"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="2"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"
+                    Clicked="botaocadastrar"/>
+                    
+            <Button Text="Beatriz Costa"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="3"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"/>
+
+            <Button Text="Carlos Lima"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="4"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"/>
+
+            <Button Text="Diana Martins"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="5"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"/>
+
+            <Button Text="Eduardo Silva"
+                    FontSize="18"
+                    Margin="0,5"
+                    Grid.Row="6"
+                    BackgroundColor="#0572f7"
+                    TextColor="Black"
+                    Grid.ColumnSpan="2"/>
+                    
+            <Button Text="Voltar"
+                    TextColor="black"
+                    BackgroundColor="#30a0fc"
+                    Grid.Row="10"
+                    Grid.Column="0"
+                    Clicked="botaovoltar"/>
+
+            <Button Text="Salvar"
+                    TextColor="black"
+                    BackgroundColor="#30a0fc"
+                    Grid.Row="10"
+                    Grid.Column="1"
+                    Clicked="botaosalvar"/>
+        </Grid>
+       
+ 
 
 </ContentPage>
+        
