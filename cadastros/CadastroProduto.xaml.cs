@@ -2,9 +2,9 @@ using Microsoft.Maui.Controls;
 
 namespace cadastros
 {
-    public partial class CadastroCliente : ContentPage
+    public partial class CadastroProduto : ContentPage
     {
-        public CadastroCliente()
+        public CadastroProduto()
         {
             InitializeComponent();
         }
@@ -17,5 +17,4 @@ namespace cadastros
                 Application.Current.MainPage = new MainPage();
         }
     }
-        
 }

@@ -20,4 +20,4 @@ namespace cadastros
                 Application.Current.MainPage = new CadastroCliente();
         }
     }
-    }
+}

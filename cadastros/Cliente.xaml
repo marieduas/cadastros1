@@ -54,7 +54,8 @@
                     Grid.Row="3"
                     BackgroundColor="#0572f7"
                     TextColor="Black"
-                    Grid.ColumnSpan="2"/>
+                    Grid.ColumnSpan="2"
+                    Clicked="botaocadastrar"/>
 
             <Button Text="Carlos Lima"
                     FontSize="18"
@@ -62,7 +63,8 @@
                     Grid.Row="4"
                     BackgroundColor="#0572f7"
                     TextColor="Black"
-                    Grid.ColumnSpan="2"/>
+                    Grid.ColumnSpan="2"
+                    Clicked="botaocadastrar"/>
 
             <Button Text="Diana Martins"
                     FontSize="18"
@@ -70,7 +72,8 @@
                     Grid.Row="5"
                     BackgroundColor="#0572f7"
                     TextColor="Black"
-                    Grid.ColumnSpan="2"/>
+                    Grid.ColumnSpan="2"
+                    Clicked="botaocadastrar"/>
 
             <Button Text="Eduardo Silva"
                     FontSize="18"
@@ -78,7 +81,8 @@
                     Grid.Row="6"
                     BackgroundColor="#0572f7"
                     TextColor="Black"
-                    Grid.ColumnSpan="2"/>
+                    Grid.ColumnSpan="2"
+                    Clicked="botaocadastrar"/>
                     
             <Button Text="Voltar"
                     TextColor="black"

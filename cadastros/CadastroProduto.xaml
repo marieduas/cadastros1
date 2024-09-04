@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cadastros.CadastroProduto"
+             BackgroundColor="White"> 
+
+    <Grid Padding="20,40"
+          BackgroundColor="#f2f9fc">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+                    <Label Text="Materia-Prima"
+                           FontSize="Medium"
+                           Grid.ColumnSpan="2"/>
+
+                    <Label Text="ID:"
+                           Grid.Row="1"
+                           Grid.Column="0"/>
+
+                    <Label x:Name="IdLabel"
+                           Grid.Row="1"
+                           Grid.Column="1"/>
+
+                    <Label Text="Unidade:"
+                           Grid.Row="2"
+                           Grid.Column="0"/>
+
+                    <Entry Placeholder="Digite a Unidade"
+                           Grid.Row="2"
+                           Grid.Column="1"/>
+
+                    <Label Text="Valor Estimado:"
+                           Grid.Row="3"
+                           Grid.Column="0"/>
+
+                    <Entry Placeholder="Digite o Valor Estiamdo"
+                           Grid.Row="3"
+                           Grid.Column="1"/>
+
+                    <Label Text="Tempo Estimado:"
+                           Grid.Row="4"
+                           Grid.Column="0"/>
+
+                    <Entry Placeholder="Digite o Tempo Estimado"
+                           Grid.Row="4"
+                           Grid.Column="1"/>
+
+                    <Label Text="Preço Total:"
+                           Grid.Row="5"
+                           Grid.Column="0"/>
+
+                    <Entry Placeholder="Digite o Preço Total"
+                           Grid.Row="5"
+                           Grid.Column="1"/>
+
+                    <Button Text="Voltar"
+                            TextColor="black"
+                            BackgroundColor="Blue"
+                            Grid.Row="13"
+                            Grid.Column="0"
+                            Clicked="botaovoltar"/>
+
+                    <Button Text="Salvar"
+                            TextColor="black"
+                            BackgroundColor="Blue"
+                            Grid.Row="13"
+                            Grid.Column="1"
+                            Clicked="botaosalvar"/>
+
+
+                </Grid>
+            
+        </ContentPage>
